@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bg-glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#0b0f19" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="avatar-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="body-grad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#312e81" />
+    </linearGradient>
+    <!-- Floating elements shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="4" flood-color="#06b6d4" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background glow -->
+  <circle cx="200" cy="200" r="180" fill="url(#bg-glow)" />
+
+  <!-- Code background design patterns (dots & grid) -->
+  <g opacity="0.15">
+    <circle cx="100" cy="120" r="1.5" fill="#fff" />
+    <circle cx="120" cy="100" r="1.5" fill="#fff" />
+    <circle cx="140" cy="120" r="1.5" fill="#fff" />
+    <circle cx="120" cy="140" r="1.5" fill="#fff" />
+    <circle cx="300" cy="120" r="1.5" fill="#fff" />
+    <circle cx="280" cy="140" r="1.5" fill="#fff" />
+    <circle cx="320" cy="140" r="1.5" fill="#fff" />
+  </g>
+
+  <!-- Laptop Screen & Body -->
+  <rect x="110" y="240" width="180" height="110" rx="8" fill="#1f2937" stroke="url(#avatar-grad)" stroke-width="3" />
+  <rect x="120" y="250" width="160" height="90" rx="4" fill="#0f172a" />
+  <!-- Keyboard Base -->
+  <path d="M80 350 L320 350 L300 365 L100 365 Z" fill="#374151" stroke="url(#avatar-grad)" stroke-width="2" />
+  <rect x="175" y="356" width="50" height="6" rx="2" fill="#1f2937" />
+
+  <!-- Code snippet mock on screen -->
+  <g opacity="0.8">
+    <rect x="130" y="260" width="40" height="6" rx="3" fill="#ef4444" />
+    <rect x="175" y="260" width="60" height="6" rx="3" fill="#3b82f6" />
+    <rect x="130" y="272" width="85" height="6" rx="3" fill="#10b981" />
+    <rect x="130" y="284" width="50" height="6" rx="3" fill="#f59e0b" />
+    <rect x="145" y="296" width="70" height="6" rx="3" fill="#8b5cf6" />
+    <rect x="145" y="308" width="40" height="6" rx="3" fill="#ec4899" />
+    <rect x="130" y="320" width="110" height="6" rx="3" fill="#06b6d4" />
+  </g>
+
+  <!-- Glowing code lines extending out -->
+  <path d="M120 280 L70 260" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.5" />
+  <path d="M280 270 L330 250" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.5" />
+
+  <!-- Silhouette / Head & Shoulders of Coder -->
+  <!-- Shoulders -->
+  <path d="M140 348 C140 285, 260 285, 260 348 Z" fill="url(#body-grad)" stroke="#475569" stroke-width="2" />
+  <!-- Head -->
+  <circle cx="200" cy="190" r="35" fill="url(#body-grad)" stroke="#475569" stroke-width="2" />
+  <!-- Hair / Hood outline -->
+  <path d="M165 190 C165 140, 235 140, 235 190 C235 200, 230 205, 230 210 L170 210 C170 205, 165 200, 165 190 Z" fill="#1e1b4b" opacity="0.8" />
+  <!-- Glowing Glasses -->
+  <rect x="175" y="183" width="22" height="14" rx="3" fill="none" stroke="#06b6d4" stroke-width="3" filter="url(#shadow)" />
+  <rect x="203" y="183" width="22" height="14" rx="3" fill="none" stroke="#06b6d4" stroke-width="3" filter="url(#shadow)" />
+  <line x1="197" y1="190" x2="203" y2="190" stroke="#06b6d4" stroke-width="3" />
+
+  <!-- Floating Tech / AI Elements Orbiting -->
+  <!-- AI / Brain Node -->
+  <g transform="translate(70, 100)" filter="url(#shadow)">
+    <circle cx="20" cy="20" r="18" fill="#111827" stroke="#8b5cf6" stroke-width="2" />
+    <!-- AI Connections symbol -->
+    <circle cx="20" cy="12" r="3" fill="#8b5cf6" />
+    <circle cx="13" cy="23" r="3" fill="#8b5cf6" />
+    <circle cx="27" cy="23" r="3" fill="#8b5cf6" />
+    <line x1="20" y1="12" x2="13" y2="23" stroke="#8b5cf6" stroke-width="1.5" />
+    <line x1="20" y1="12" x2="27" y2="23" stroke="#8b5cf6" stroke-width="1.5" />
+    <line x1="13" y1="23" x2="27" y2="23" stroke="#8b5cf6" stroke-width="1.5" />
+  </g>
+
+  <!-- Database / Stack Node -->
+  <g transform="translate(300, 120)" filter="url(#shadow)">
+    <circle cx="20" cy="20" r="18" fill="#111827" stroke="#06b6d4" stroke-width="2" />
+    <!-- Stack cylinder representation -->
+    <ellipse cx="20" cy="13" rx="8" ry="3" fill="none" stroke="#06b6d4" stroke-width="1.5" />
+    <path d="M12 13 L12 20 A8 3 0 0 0 28 20 L28 13" fill="none" stroke="#06b6d4" stroke-width="1.5" />
+    <path d="M12 20 L12 27 A8 3 0 0 0 28 27 L28 20" fill="none" stroke="#06b6d4" stroke-width="1.5" />
+  </g>
+
+  <!-- React/JS Orbit Node -->
+  <g transform="translate(310, 270)" filter="url(#shadow)">
+    <circle cx="20" cy="20" r="18" fill="#111827" stroke="#eab308" stroke-width="2" />
+    <!-- Code angle bracket -->
+    <path d="M14 20 L19 15 M14 20 L19 25 M26 20 L21 15 M26 20 L21 25" stroke="#eab308" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Network / Server Node -->
+  <g transform="translate(50, 240)" filter="url(#shadow)">
+    <circle cx="20" cy="20" r="18" fill="#111827" stroke="#10b981" stroke-width="2" />
+    <!-- Network nodes -->
+    <circle cx="15" cy="15" r="2" fill="#10b981" />
+    <circle cx="25" cy="15" r="2" fill="#10b981" />
+    <circle cx="20" cy="26" r="2" fill="#10b981" />
+    <line x1="15" y1="15" x2="20" y2="26" stroke="#10b981" stroke-width="1" />
+    <line x1="25" y1="15" x2="20" y2="26" stroke="#10b981" stroke-width="1" />
+    <line x1="15" y1="15" x2="25" y2="15" stroke="#10b981" stroke-width="1" />
+  </g>
+</svg>
