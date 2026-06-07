@@ -1,12 +1,5 @@
-/* ==========================================================================
-   JavaScript Functionality - Portfolio website
-   ========================================================================== */
-
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* --------------------------------------------------------------------------
-     1. Light / Dark Theme Toggle & Persistence
-     -------------------------------------------------------------------------- */
   const themeToggleBtn = document.getElementById('theme-toggle');
   const body = document.body;
 
@@ -65,8 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const phrases = [
     'CSE Student.',
     'Full Stack Developer.',
-    'Database & Networking Enthusiast.',
-    'Machine Learning Apprentice.'
+    'AI EXPLORER.',
+    'PROBLEM SOLVER'
   ];
   
   let phraseIndex = 0;
@@ -78,10 +71,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentPhrase = phrases[phraseIndex];
 
     if (isDeleting) {
-      // Erase text character by character
+      
       typewriterText.textContent = currentPhrase.substring(0, characterIndex - 1);
       characterIndex--;
-      typingSpeed = 50; // Erase slightly faster
+      typingSpeed = 50; 
     } else {
       // Write text character by character
       typewriterText.textContent = currentPhrase.substring(0, characterIndex + 1);
